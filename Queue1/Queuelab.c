@@ -26,7 +26,7 @@
  * is used in conjunction with NXP Semiconductors microcontrollers.  This
  * copyright, permission, and disclaimer notice must appear in all copies of
  * this code.
-	 *Jimit PAtel
+	 *Jimit Patel
  */
 
 #include <stdlib.h>
