@@ -141,12 +141,12 @@ int main(void)
 
 	if (ledColorQueue != NULL) {
 		/* LED color selection thread */
-		xTaskCreate(vLEDColorSelectTask, (signed char *) "Color Select",
+	xTaskCreate(vLEDColorSelectTask, (signed char *) "Color Select",
 				configMINIMAL_STACK_SIZE, ledColorQueue, (tskIDLE_PRIORITY + 1UL),
 				NULL);
 
 		/* LED color setting thread */
-		xTaskCreate(vLEDColorSetTask, (signed char *) "Color Show",
+	xTaskCreate(vLEDColorSetTask, (signed char *) "Color Show",
 				configMINIMAL_STACK_SIZE, ledColorQueue, (tskIDLE_PRIORITY + 1UL),
 				NULL);
 
